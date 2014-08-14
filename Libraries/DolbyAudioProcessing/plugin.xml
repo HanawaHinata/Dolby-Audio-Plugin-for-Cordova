@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+ This program is protected under international and U.S. copyright laws as
+ an unpublished work. This program is confidential and proprietary to the
+ copyright owners. Reproduction or disclosure, in whole or in part, or the
+ production of derivative works therefrom without the express permission of
+ the copyright owners is prohibited. 
+ 
+                Copyright (C) 2014 by Dolby Laboratories.
+                            All rights reserved.
+
+-->
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="com.dolby.dax"
+        version="1.0.0">
+
+    <name>Dolby Audio Plug-in for Cordova</name>
+    <description>Dolby Audio Post Processing Plugin for Cordova</description>
+    <license>Use of the Cordova plug-in is governed by Dolby's terms of use located at http://developer.dolby.com/terms.aspx. </license>
+    <keywords>cordova,dolby,audio,post processing,dap</keywords>
+
+    <engines>
+      <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+    <js-module src="www/dap.js" name="DolbyDap">
+        <clobbers target="dolby.dap" />
+    </js-module>
+
+    <js-module src="www/DapError.js" name="DapError">
+        <clobbers target="DapError" />
+    </js-module>
+
+    <js-module src="www/DapProfile.js" name="DapProfile">
+        <clobbers target="DapProfile" />
+    </js-module>
+    
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="DolbyDapPlugin"> 
+                <param name="android-package" value="com.dolby.dax.DolbyDapPlugin"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/DolbyDapPlugin.java" target-dir="src/com/dolby/dax" />
+        <source-file src="src/android/lib/dolby_audio_processing.jar" target-dir="libs" />
+    </platform>
+	
+	<!-- amazon-fireos -->
+    <platform name="amazon-fireos">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="DolbyDapPlugin"> 
+                <param name="android-package" value="com.dolby.dax.DolbyDapPlugin"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/DolbyDapPlugin.java" target-dir="src/com/dolby/dax" />
+        <source-file src="src/android/lib/dolby_audio_processing.jar" target-dir="libs" />
+    </platform>
+
+</plugin>
