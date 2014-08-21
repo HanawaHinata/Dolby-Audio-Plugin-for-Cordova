@@ -30,11 +30,11 @@
     </js-module>
 
     <js-module src="www/DapError.js" name="DapError">
-        <clobbers target="DapError" />
+        <clobbers target="dolby.DapError" />
     </js-module>
 
     <js-module src="www/DapProfile.js" name="DapProfile">
-        <clobbers target="DapProfile" />
+        <clobbers target="dolby.DapProfile" />
     </js-module>
     
     <!-- android -->

@@ -3,21 +3,22 @@
  * an unpublished work. This program is confidential and proprietary to the
  * copyright owners. Reproduction or disclosure, in whole or in part, or the
  * production of derivative works there from without the express permission of
- * the copyright owners is prohibited. 
+ * the copyright owners is prohibited.
  *
  *                Copyright (C) 2014 by Dolby Laboratories.
  *                            All rights reserved.
  ******************************************************************************/
 
 /**
- * Dolby Audio Processing profiles available to DolbyAudioProcessing API clients. 
- * The Dolby Audio Processing profiles on the devices with integrated Dolby technology have Dolby Audio Processing. MOVIE,MUSIC,GAME, and VOICE.
- * DOLBY_PRIVATE_PROFILE is reserved for internal or OEM use only. It can't be selected by setProfile(profile,success, fail) API.
- * DOLBY_PRIVATE_PROFILE will be returned by getSelectedProfile(success,fail) if the current system-side profile is the reserved profile.
+ * This class provides the Dolby Audio Processing profiles available to DolbyAudioProcessing API clients.
+ * The Dolby Audio Processing profiles on the devices with integrated Dolby technology have Dolby Audio Processing are MOVIE, MUSIC, GAME, and VOICE.
+ * DOLBY_PRIVATE_PROFILE is reserved for internal or OEM use only. It can't be selected by setProfile(profile, success, fail) API.
+ * DOLBY_PRIVATE_PROFILE is returned by getSelectedProfile(success, fail) if the current system-side profile is the reserved profile.
  * @constructor
  *
  */
-var DapProfile = function() {};
+var DapProfile = function () {
+};
 
 /**
  * Enhances the dialogue focus while providing the best possible representation of the full dynamic range of the program.
@@ -32,8 +33,8 @@ DapProfile.MUSIC = "MUSIC";
  */
 DapProfile.GAME = "GAME";
 /**
-*Customized for the reproduction of speech patterns and the tonal range of the human voice.
-*/
+ *Customized for the reproduction of speech patterns and the tonal range of the human voice.
+ */
 DapProfile.VOICE = "VOICE";
 /**
  * Reserved for internal or OEM use only.

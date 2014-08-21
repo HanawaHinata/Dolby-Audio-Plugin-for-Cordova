@@ -1,0 +1,51 @@
+<html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"> <style>
+	.KEYW {color: #933;}
+	.COMM {color: #bbb; font-style: italic;}
+	.NUMB {color: #393;}
+	.STRN {color: #393;}
+	.REGX {color: #339;}
+	.line {border-right: 1px dotted #666; color: #666; font-style: normal;}
+	</style></head><body><pre><span class='line'>  1</span> <span class="COMM">/******************************************************************************
+<span class='line'>  2</span>  * This program is protected under international and U.S. copyright laws as
+<span class='line'>  3</span>  * an unpublished work. This program is confidential and proprietary to the
+<span class='line'>  4</span>  * copyright owners. Reproduction or disclosure, in whole or in part, or the
+<span class='line'>  5</span>  * production of derivative works there from without the express permission of
+<span class='line'>  6</span>  * the copyright owners is prohibited.
+<span class='line'>  7</span>  *
+<span class='line'>  8</span>  *                Copyright (C) 2014 by Dolby Laboratories.
+<span class='line'>  9</span>  *                            All rights reserved.
+<span class='line'> 10</span>  ******************************************************************************/</span><span class="WHIT">
+<span class='line'> 11</span> 
+<span class='line'> 12</span> </span><span class="COMM">/**
+<span class='line'> 13</span>  * This class provides the Dolby Audio Processing profiles available to DolbyAudioProcessing API clients.
+<span class='line'> 14</span>  * The Dolby Audio Processing profiles on the devices with integrated Dolby technology have Dolby Audio Processing are MOVIE, MUSIC, GAME, and VOICE.
+<span class='line'> 15</span>  * DOLBY_PRIVATE_PROFILE is reserved for internal or OEM use only. It can't be selected by setProfile(profile, success, fail) API.
+<span class='line'> 16</span>  * DOLBY_PRIVATE_PROFILE is returned by getSelectedProfile(success, fail) if the current system-side profile is the reserved profile.
+<span class='line'> 17</span>  * @constructor
+<span class='line'> 18</span>  *
+<span class='line'> 19</span>  */</span><span class="WHIT">
+<span class='line'> 20</span> </span><span class="KEYW">var</span><span class="WHIT"> </span><span class="NAME">DapProfile</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="KEYW">function</span><span class="WHIT"> </span><span class="PUNC">(</span><span class="PUNC">)</span><span class="WHIT"> </span><span class="PUNC">{</span><span class="WHIT">
+<span class='line'> 21</span> </span><span class="PUNC">}</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 22</span> 
+<span class='line'> 23</span> </span><span class="COMM">/**
+<span class='line'> 24</span>  * Enhances the dialogue focus while providing the best possible representation of the full dynamic range of the program.
+<span class='line'> 25</span>  */</span><span class="WHIT">
+<span class='line'> 26</span> </span><span class="NAME">DapProfile.MOVIE</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="STRN">"MOVIE"</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 27</span> </span><span class="COMM">/**
+<span class='line'> 28</span>  * Applies equalization and dynamic range control to enrich instrumental and vocal quality in recorded music.
+<span class='line'> 29</span>  */</span><span class="WHIT">
+<span class='line'> 30</span> </span><span class="NAME">DapProfile.MUSIC</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="STRN">"MUSIC"</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 31</span> </span><span class="COMM">/**
+<span class='line'> 32</span>  * Creates a simulated live space to best bring out the effect of fast-moving objects in the audio.
+<span class='line'> 33</span>  */</span><span class="WHIT">
+<span class='line'> 34</span> </span><span class="NAME">DapProfile.GAME</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="STRN">"GAME"</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 35</span> </span><span class="COMM">/**
+<span class='line'> 36</span>  *Customized for the reproduction of speech patterns and the tonal range of the human voice.
+<span class='line'> 37</span>  */</span><span class="WHIT">
+<span class='line'> 38</span> </span><span class="NAME">DapProfile.VOICE</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="STRN">"VOICE"</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 39</span> </span><span class="COMM">/**
+<span class='line'> 40</span>  * Reserved for internal or OEM use only.
+<span class='line'> 41</span>  */</span><span class="WHIT">
+<span class='line'> 42</span> </span><span class="NAME">DapProfile.DOLBY_PRIVATE_PROFILE</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="STRN">"DOLBY_PRIVATE_PROFILE"</span><span class="PUNC">;</span><span class="WHIT">
+<span class='line'> 43</span> 
+<span class='line'> 44</span> </span><span class="NAME">module.exports</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="NAME">DapProfile</span><span class="PUNC">;</span></pre></body></html>
