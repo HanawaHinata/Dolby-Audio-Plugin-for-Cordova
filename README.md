@@ -18,7 +18,7 @@
 
 Release: Dolby Audio Plug-in for Cordova
          Version: 1.0 
-	     July 3rd, 2014
+	     August 25th, 2014
 -------------------------
 
 This deliverable consists of a Dolby Audio Plug-in for Cordova and documents 
